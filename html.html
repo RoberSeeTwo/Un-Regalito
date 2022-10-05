@@ -19,44 +19,59 @@
     var month=(m<10)?'0'+m:m;
     var yy=date.getYear();
     var year=(yy<1000)?yy+1900:yy;document.write(day+"/"+month+"/"+year);
-     
-     
-     
+
 </script>
+
 <br><br><br>
 </div>
 </p></b></font>
-    <strong><em><p><center><font color="D9F5F4"><font size="30">¿Quieres ver el detalle?</font></center></p></em></strong>
-    <br><br><br><br><br><br><br><br><br>
-<center>
-    <div class="box-2">
-        <div class="btn10 btn-two">
-          <span><strong><em>Abrir</em></strong></span>
-        </div>
-      </div>
-</center>
+    <div class="t1">
+    <strong><em><p><center>Un pequeño Detalle para ti</center></p></em></strong>
+    </div>
+    <div class="cor">
+        <img src="https://genesistoxical.com/wp-content/uploads/2021/05/Corazon_doodle_png.png" width="250px" height="250px">
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="t2">
+    <strong><em><p><center><font color="D9F5F4">Te amooo</center></p></em></strong>
+    </div>
     <div>
-    <strong><em><p><center><font color="D9F5F4"><font size="40">Te amooo</font></center></p></em></strong>
-    <div><center>
-        <h3>
+        <center>
             <details>
             <summary>Mucho...</summary>
-            <p><br>Mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho,
-                mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, mucho, 
-                mucho, mucho, mucho, mucho...<br><br>y Mucho más que eso. 🤍<br><br></p>
+            <p><br>Mucho, mucho,<br>
+                    mucho, mucho,<br>
+                    mucho,mucho...
+                    <br>Y<br>Mucho más que eso.<br>🤍<br></p>
           </details>
-        </h3>
     </center>
       </div>
 
     <style>
 
+        .t1 {
+            position: absolute;
+            top: 80px;
+            left: 20%;
+            right: 20%;
+            font-size: 25px;
+            color: #D9F5F4;
+        }
+
+        .t2 {
+            position: absolute;
+            top: 2%;
+            left: 3.5%;
+            color: white;
+            font-size: 13px;
+        }
+
         .fecha {
             position: absolute;
-            top: 7%;
-            left: 95%;
+            top: 4%;
+            left: 44.4px;
             color: white;
-            font-size: 15px;
+            font-size: 8px;
             transform: translate(-50%,-50%);
         }
 
@@ -74,8 +89,6 @@
             text-align: center;
         }
 
-        .box-1 { background-color: #66c9ff;}
-
         .btn10 {
 	        line-height: 50px;
 	        height: 50px;
@@ -83,16 +96,15 @@
 	        width: 450px;
 	        cursor: pointer;
             align-items: center;
-            justify-content: center
-            ;
+            justify-content: center;
         }
 
 
         .btn-two {
+            top: 75%;
 	        color: #FFF;
 	        transition: all 0.5s;
 	        position: relative;	
-        
         }
         .btn-two span {
 	        z-index: 2;	
@@ -150,14 +162,12 @@
             left: 50%;   
             width: 100px;
             height: 75px;
-            align-items: center;
-            justify-content: center;
         }
 
         .btn02{
             position: relative;
             display: block;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
             font-size: 14px;
             font-family: "montserrat";
             text-decoration: none;
@@ -183,22 +193,17 @@
         .btn2::before{
             width: 0%;
             height: 100%;
-
         }
 
         .btn2:hover::before{
             width: 100%;
-
         }
 
         .middle{
-
             top: 50%;
             left: 50%;   
             width: 100px;
             height: 75px;
-            align-items: center;
-            justify-content: center;
         }
 
         .btn01{
@@ -237,13 +242,10 @@
         }
 
         .right{
-
             top: 50%;
             left: 50%;   
             width: 100px;
             height: 75px;
-            align-items: center;
-            justify-content: center;
         }
 
         .btn03{
@@ -281,20 +283,63 @@
             width: 100%;
         }
 
-        details {
+        .easteregg{
+            top: 50%;
+            left: 50%;   
+            width: 100px;
+            height: 75px;
+        }
 
-            font: 32px "Gabriola" "Bold";
-            width: 620px;
+        .btneg{
+            position: relative;
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "montserrat";
+            text-decoration: none;
+            margin: 10px 0;
+            border: 2px solid #7aff75;
+            padding: 10px 10px;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 1s all ease;
+        }
+
+        .btneg::before{
+            background: #75ff83;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.6s ease;    
+        }
+
+        .btneg1::before{
+            width: 0%;
+            height: 100%;
+        }
+
+        .btneg1:hover::before{
+            width: 100%;
+        }
+
+        details {
+            position: absolute;
+            top: 8%;
+            left: 1.5%;
+            font: 10px "Gabriola" "Bold";
             color: #ffffffd7;
             border-radius: 25px 25px 25px 25px;
         }
 
         details > summary {
-
-            font-size: 25px;
-            padding: 2px 6px;
-            width: 175px;
-            background-color: #831ca9;
+            top: 5px;
+            font-size: 15px;
+            padding: 0px 0px;
+            width: 100px;
+            background-color: #831ca978;
             border: none;
             box-shadow: 3px 3px 4px #32032b;
             cursor: pointer;
@@ -303,37 +348,80 @@
         }
 
         details > p {
-
-            font-size: 15px;
+            font-size: 11px;
+            width: 90px;
             font-family: Trebuchet MS;
             border-radius: 20px 20px 20px 20px;
             background-color: #9a2ea8;
             padding: 2px 2px;
             margin: 1px;
             box-shadow: 3px 3px 4px #41063e;
-}
+        }
 
         details[open] > summary {
-
-            width: 150px;
+            position: absolute;
+            top: -15px;
+            left: 2px;
             background-color: #c800ff9e;
+        }
 
+        .cor {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            right: 15%;
+            bottom: 50%;
         }
 
     </style>
-<br><br><br><br><br><br><br>
-    <div>
-  <p><img src="https://genesistoxical.com/wp-content/uploads/2021/05/Corazon_doodle_png.png"</p>
-    <br>
+    <br><br>
 <center>
     <div class="left">
         <a href="https://www.youtube.com/watch?v=ujllcynquKg" class="btn02 btn2">Para ti❤️</a>
     <div class="middle">
-        <a href="https://www.youtube.com/watch?v=ujllcynquKg" class="btn01 btn1">Para ti❤️</a>
+        <a href="https://www.youtube.com/watch?v=ujllcynquKg" class="btn01 btn1">Fotos</a>
     <div class="light">
-        <a href="https://www.youtube.com/watch?v=ujllcynquKg" class="btn03 btn3">Para ti❤️</a>
+        <a href="https://www.youtube.com/watch?v=ujllcynquKg" class="btn03 btn3">Carta</a>
     </div>
 </center>
+</div>
+    <br><br><br><br><br>
+<center>
+    <hr width="38%">
+    <hr width="33%">
+    <br>
+    <div class="easteregg">
+    <a href="https://Proximamente" class="btneg btneg1"><b>???</b></a>
+    </div>
+    <hr width="33%">
+    <hr width="38%">
+</center>
+    <br><br>
+    <div id="content" class="col-lg-12">
+        <div id="element" class="col-lg-12" style="display: none;"> 
+            <div id="close"><a class="btn btn-small" href="#" id="hide" title="Cerrar"><i class="fa fa-close"></i></a></div>
+            <h2>¡Me encontraste!</h2>
+            <p>Habrá una sorpresa especial.<br>Pornto!...</p>
+        </div>
+    </div>
+    <p><a class="btn btn-primary" href="#" id="show"><i class="fa fa-eye"></i><b><i>¡Sorpresa!</i></b></a></p>
 
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#hide").on('click', function() {
+        $("#element").hide();
+        return false;
+    });
+ 
+    $("#show").on('click', function() {
+        $("#element").show();
+        return false;
+    });
+});
+</script>
+
+<br><br>
+    </body>
+</html>
 </html>
